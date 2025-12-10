@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="【2025年法改正】労働者数50人未満の小規模事業場もストレスチェック実施が義務化！2025年5月公布の改正労働安全衛生法により、努力義務から義務へ変更。中小企業の経営者・人事担当者向けに、義務化の詳細、実施手順、外部委託のメリットを徹底解説。">
+    <meta name="keywords" content="ストレスチェック義務化,50人未満,2025年法改正,労働安全衛生法改正,小規模事業場,中小企業,メンタルヘルス対策,産業医,外部委託,努力義務から義務化">
+    <title>【2025年法改正】50人未満も義務化！ストレスチェック制度実施ガイド｜中小企業向け完全版</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --emerald-main: #10b981;
+            --emerald-dark: #059669;
+            --emerald-darker: #047857;
+            --emerald-light: #d1fae5;
+            --emerald-lighter: #ecfdf5;
+            --emerald-pale: #f0fdfa;
+            --emerald-accent: #34d399;
+            --text-dark: #064e3b;
+            --text-medium: #047857;
+            --red-alert: #ef4444;
+            --red-bg: #fef2f2;
+            --red-dark: #7f1d1d;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ヘッダー */
+        header {
+            background: linear-gradient(135deg, var(--emerald-main) 0%, var(--emerald-dark) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: clamp(24px, 5vw, 36px);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        .badge-new {
+            display: inline-block;
+            background-color: var(--red-alert);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: clamp(14px, 3vw, 16px);
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .lead-text {
+            font-size: clamp(16px, 3.5vw, 20px);
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+        
+        /* 重要告知セクション */
+        .alert-section {
+            background: linear-gradient(135deg, var(--emerald-main) 0%, var(--emerald-dark) 100%);
+            color: white;
+            padding: 40px 20px;
+            margin: 40px 0;
+            border-radius: 10px;
+        }
+        
+        .alert-section h2 {
+            font-size: clamp(22px, 4vw, 28px);
+            margin-bottom: 20px;
+        }
+        
+        .alert-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .alert-section li {
+            font-size: clamp(16px, 3vw, 20px);
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .alert-section li:last-child {
+            border-bottom: none;
+        }
+        
+        /* 目次 */
+        .toc {
+            background-color: var(--emerald-lighter);
+            border: 2px solid var(--emerald-main);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .toc h2 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-size: clamp(20px, 4vw, 24px);
+        }
+        
+        .toc ol {
+            padding-left: 20px;
+        }
+        
+        .toc li {
+            margin: 10px 0;
+            font-size: clamp(15px, 3vw, 18px);
+        }
+        
+        .toc a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .toc a:hover {
+            text-decoration: underline;
+            color: var(--emerald-main);
+        }
+        
+        /* セクション */
+        section {
+            margin: 60px 0;
+        }
+        
+        h2 {
+            color: var(--text-dark);
+            font-size: clamp(24px, 4.5vw, 32px);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--emerald-main);
+        }
+        
+        h3 {
+            color: var(--text-medium);
+            font-size: clamp(20px, 4vw, 26px);
+            margin: 30px 0 20px;
+        }
+        
+        h4 {
+            color: var(--text-medium);
+            font-size: clamp(18px, 3.5vw, 22px);
+            margin: 25px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: clamp(15px, 3vw, 18px);
+        }
+        
+        /* 強調ボックス */
+        .box {
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        
+        .box-info {
+            background-color: var(--emerald-light);
+            border-left: 5px solid var(--emerald-main);
+        }
+        
+        .box-success {
+            background-color: var(--emerald-lighter);
+            border-left: 5px solid var(--emerald-dark);
+        }
+        
+        .box-warning {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+        
+        .box-danger {
+            background-color: var(--red-bg);
+            border-left: 5px solid var(--red-alert);
+            color: var(--red-dark);
+        }
+        
+        .box strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: clamp(16px, 3.5vw, 20px);
+        }
+        
+        /* テーブル */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 30px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: clamp(14px, 2.5vw, 16px);
+        }
+        
+        th, td {
+            padding: 15px;
+            border: 1px solid #d1fae5;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--emerald-lighter);
+            color: var(--text-dark);
+            font-weight: bold;
+        }
+        
+        tr:nth-child(even) {
+            background-color: var(--emerald-pale);
+        }
+        
+        /* リスト */
+        ul, ol {
+            margin: 20px 0 20px 25px;
+        }
+        
+        li {
+            margin: 10px 0;
+            font-size: clamp(15px, 3vw, 18px);
+        }
+        
+        /* フローチャート */
+        .flow-chart {
+            background-color: var(--emerald-pale);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .flow-step {
+            background-color: white;
+            border: 2px solid var(--emerald-main);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        .flow-step::after {
+            content: '↓';
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            color: var(--emerald-main);
+            margin-top: 15px;
+        }
+        
+        .flow-step:last-child::after {
+            display: none;
+        }
+        
+        /* CTA セクション */
+        .cta-section {
+            background: linear-gradient(135deg, var(--emerald-main) 0%, var(--emerald-dark) 100%);
+            color: white;
+            padding: 60px 20px;
+            margin: 60px 0;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            border: none;
+            margin-bottom: 20px;
+            font-size: clamp(24px, 5vw, 32px);
+        }
+        
+        .cta-section p {
+            font-size: clamp(16px, 3.5vw, 22px);
+            margin: 20px 0;
+        }
+        
+        .cta-box {
+            background-color: rgba(255,255,255,0.15);
+            padding: 40px 30px;
+            border-radius: 10px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            font-size: clamp(20px, 4vw, 26px);
+            margin-bottom: 20px;
+        }
+        
+        .cta-box ul {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .cta-box li {
+            font-size: clamp(16px, 3vw, 20px);
+            padding: 12px 0;
+            line-height: 1.8;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--emerald-accent);
+            color: var(--text-dark);
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: clamp(18px, 3.5vw, 24px);
+            font-weight: bold;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--emerald-main);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        }
+        
+        /* フッター */
+        footer {
+            background-color: var(--emerald-lighter);
+            padding: 40px 20px;
+            margin-top: 60px;
+            text-align: center;
+            border-top: 3px solid var(--emerald-main);
+        }
+        
+        footer p {
+            color: var(--text-dark);
+            font-size: clamp(14px, 2.5vw, 16px);
+            margin: 10px 0;
+        }
+        
+        footer a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: clamp(16px, 3vw, 20px);
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .keywords {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--emerald-main);
+            color: #6c757d;
+            font-size: clamp(12px, 2vw, 14px);
+        }
+        
+        /* トップへ戻るボタン */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--emerald-main);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        #back-to-top:hover {
+            background-color: var(--emerald-dark);
+            transform: translateY(-5px);
+        }
+        
+        #back-to-top.show {
+            display: flex;
+        }
+        
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            header {
+                padding: 40px 15px;
+            }
+            
+            .toc {
+                padding: 20px;
+            }
+            
+            .box {
+                padding: 20px;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+            
+            .cta-button {
+                padding: 18px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="badge-new">🔥 2025年法改正で義務化決定！</div>
+            <h1>【2025年法改正】<br>50人未満の小規模事業場も<br>ストレスチェック実施が義務化！</h1>
+            <p class="lead-text">
+                努力義務から<strong>義務化</strong>へ変更<br>
+                中小企業の経営者・人事担当者必見！<br>
+                法改正の詳細から実施手順まで徹底解説
+            </p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- 重要告知 -->
+        <div class="alert-section">
+            <h2>🚨 重要なお知らせ</h2>
+            <ul>
+                <li>✓ <strong>2025年5月14日</strong>：改正労働安全衛生法が公布</li>
+                <li>✓ <strong>労働者数50人未満の事業場</strong>もストレスチェック実施が<strong>義務化</strong></li>
+                <li>✓ これまでの<strong>「努力義務」から「義務」</strong>に変更</li>
+                <li>✓ <strong>施行日</strong>：公布日から政令で定める<strong>3年以内の日</strong>（最長2028年5月まで）</li>
+                <li>✓ <strong>事業場規模にかかわらず</strong>すべての事業場が対象に</li>
+            </ul>
+        </div>
+
+        <!-- 目次 -->
+        <div class="toc">
+            <h2>📋 目次</h2>
+            <ol>
+                <li><a href="#section1">2025年法改正の詳細</a></li>
+                <li><a href="#section2">ストレスチェック制度とは</a></li>
+                <li><a href="#section3">実施義務の対象範囲</a></li>
+                <li><a href="#section4">実施の具体的な手順</a></li>
+                <li><a href="#section5">外部委託のメリットと選び方</a></li>
+                <li><a href="#section6">費用負担と実施頻度</a></li>
+                <li><a href="#section7">プライバシー保護の重要ポイント</a></li>
+                <li><a href="#section8">罰則規定と法的リスク（50人以上）</a></li>
+                <li><a href="#section9">まとめ：専門家への相談がおすすめ</a></li>
+            </ol>
+        </div>
+
+        <!-- セクション1：法改正の詳細 -->
+        <section id="section1">
+            <h2>1. 2025年法改正の詳細</h2>
+            
+            <h3>📜 改正労働安全衛生法の概要</h3>
+            
+            <div class="box box-danger">
+                <strong>🔴 最重要ポイント</strong><br>
+                <strong>令和7年（2025年）5月14日に改正労働安全衛生法が公布され、これまで「努力義務」だった労働者数50人未満の事業場へのストレスチェック実施が「義務」となりました。</strong>
+            </div>
+
+            <h3>🗓️ 法改正の経緯</h3>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>時期</th>
+                        <th>内容</th>
+                    </tr>
+                    <tr>
+                        <td><strong>平成27年（2015年）</strong></td>
+                        <td>ストレスチェック制度開始<br>• 50人以上：義務<br>• 50人未満：努力義務</td>
+                    </tr>
+                    <tr>
+                        <td><strong>令和7年（2025年）5月14日</strong></td>
+                        <td><strong>改正労働安全衛生法公布</strong><br>• <strong>50人未満も義務化</strong><br>• 事業場規模にかかわらず義務化</td>
+                    </tr>
+                    <tr>
+                        <td><strong>施行日</strong></td>
+                        <td><strong>公布日から3年以内に政令で定める日</strong><br>（最長：2028年5月13日まで）</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>🎯 法改正の背景</h3>
+
+            <ul>
+                <li><strong>精神障害の労災支給決定件数が増加傾向</strong></li>
+                <li><strong>小規模事業場でも多数のメンタルヘルス不調が発生</strong></li>
+                <li><strong>事業場規模にかかわらずメンタルヘルス対策が課題</strong></li>
+                <li><strong>未然防止（一次予防）の強化が急務</strong></li>
+            </ul>
+
+            <div class="box box-info">
+                <strong>💡 重要な変更点</strong><br>
+                • 努力義務 → 義務化：50人未満の事業場も実施が必須に<br>
+                • 施行までの猶予期間：最長3年の準備期間あり<br>
+                • 報告義務は依然として50人以上のみ：50人未満は労働基準監督署への報告は不要<br>
+                • 集団分析・職場環境改善：引き続き努力義務
+            </div>
+        </section>
+
+        <!-- セクション2：制度概要 -->
+        <section id="section2">
+            <h2>2. ストレスチェック制度とは</h2>
+
+            <h3>🎯 制度の目的</h3>
+
+            <ol>
+                <li><strong>メンタルヘルス不調の未然防止</strong>（一次予防）</li>
+                <li>労働者自身のストレス気づきの促進（セルフケア）</li>
+                <li>職場環境改善を通じた働きやすい職場づくり</li>
+            </ol>
+
+            <div class="box box-warning">
+                <strong>⚠️ 注意</strong><br>
+                ストレスチェック制度は「メンタルヘルス不調者の発見」が目的ではありません。あくまで<strong>「未然防止」</strong>が主な目的です。
+            </div>
+
+            <h3>📊 データで見る制度の効果</h3>
+
+            <ul>
+                <li>ストレスチェック受検者の<strong>約70%が「自身のストレスが分かったことが有効」</strong>と回答</li>
+                <li>メンタルヘルス不調による休職期間は平均<strong>約3ヶ月</strong></li>
+                <li>復職後、<strong>約半数が再び休職</strong>するリスク</li>
+                <li>適切な対策により<strong>生産性向上・人材定着・企業価値向上</strong>につながる</li>
+            </ul>
+
+            <h3>🌟 小規模事業場にとっての意義</h3>
+
+            <div class="box box-success">
+                <strong>✅ 小規模事業場こそメリット大</strong><br><br>
+
+                <strong>1. 人材不足への対策</strong><br>
+                1人でも休職・離職すると事業への影響が大きい中小企業こそ、メンタルヘルス対策が重要です。<br><br>
+
+                <strong>2. 生産性の向上</strong><br>
+                働きやすい職場環境の実現が、生産性向上・人材定着につながります。<br><br>
+
+                <strong>3. 企業イメージの向上</strong><br>
+                従業員の健康を大切にする企業として、採用力強化にもつながります。<br><br>
+
+                <strong>4. 経営リスクの軽減</strong><br>
+                メンタルヘルス不調による休職期間は平均3ヶ月。未然防止がコスト削減になります。
+            </div>
+        </section>
+
+        <!-- セクション3：実施義務の対象 -->
+        <section id="section3">
+            <h2>3. 実施義務の対象範囲</h2>
+
+            <h3>✅ 対象となる労働者</h3>
+
+            <p>ストレスチェックの対象者となる<strong>「常時使用する労働者」</strong>とは、以下のいずれの要件も満たす者です（一般定期健康診断の対象者と同様）：</p>
+
+            <h4>①契約期間の要件</h4>
+            <ul>
+                <li>期間の定めのない労働契約により使用される者</li>
+                <li><strong>または</strong>、契約期間が<strong>1年以上</strong>の者</li>
+                <li><strong>または</strong>、契約更新により<strong>1年以上使用されることが予定</strong>されている者</li>
+                <li><strong>または</strong>、<strong>1年以上引き続き使用</strong>されている者</li>
+            </ul>
+
+            <h4>②労働時間の要件</h4>
+            <ul>
+                <li>1週間の労働時間数が、同種の業務に従事する通常の労働者の<strong>4分の3以上</strong></li>
+            </ul>
+
+            <div class="box box-info">
+                <strong>💡 推奨</strong><br>
+                1週間の労働時間数が通常の労働者の<strong>4分の3未満</strong>でも、<strong>2分の1以上</strong>の労働者に対しても、ストレスチェックを実施することが<strong>望まれます</strong>。
+            </div>
+
+            <h3>👥 派遣労働者の取扱い</h3>
+
+            <div class="box box-warning">
+                <strong>⚠️ 重要</strong><br>
+                派遣労働者に対するストレスチェックは、<strong>派遣元に実施義務</strong>があります（一般定期健康診断と同様）。
+            </div>
+
+            <h3>📝 実施義務・努力義務の整理</h3>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>項目</th>
+                        <th>50人以上<br>（改正前から）</th>
+                        <th>50人未満<br>（2025年法改正後）</th>
+                    </tr>
+                    <tr>
+                        <td><strong>ストレスチェック実施</strong></td>
+                        <td>義務</td>
+                        <td><strong>義務（努力義務から変更）</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>面接指導</strong></td>
+                        <td>申出あれば義務</td>
+                        <td>申出あれば義務</td>
+                    </tr>
+                    <tr>
+                        <td><strong>集団分析</strong></td>
+                        <td>努力義務</td>
+                        <td>努力義務</td>
+                    </tr>
+                    <tr>
+                        <td><strong>職場環境改善</strong></td>
+                        <td>努力義務</td>
+                        <td>努力義務</td>
+                    </tr>
+                    <tr>
+                        <td><strong>労働基準監督署への報告</strong></td>
+                        <td>義務（罰則あり）</td>
+                        <td>不要</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- セクション4：実施手順 -->
+        <section id="section4">
+            <h2>4. 実施の具体的な手順</h2>
+
+            <h3>📅 ストレスチェック制度実施フロー</h3>
+
+            <div class="flow-chart">
+                <div class="flow-step">
+                    <strong>【準備フェーズ】</strong><br>
+                    ① 事業者による基本方針の表明
+                </div>
+                <div class="flow-step">
+                    ② 関係労働者の意見聴取<br>
+                    （実施方法、調査票、高ストレス者選定基準などを協議）
+                </div>
+                <div class="flow-step">
+                    ③ 社内規程の作成・労働者への周知
+                </div>
+                <div class="flow-step">
+                    <strong>【実施フェーズ】</strong><br>
+                    ④ 実施者の選任（医師・保健師等）<br>
+                    ※外部委託が推奨
+                </div>
+                <div class="flow-step">
+                    ⑤ ストレスチェックの実施（年1回以上）
+                </div>
+                <div class="flow-step">
+                    ⑥ 結果の本人への直接通知<br>
+                    （実施者から直接、本人のみに通知）
+                </div>
+                <div class="flow-step">
+                    ⑦ 高ストレス者の選定
+                </div>
+                <div class="flow-step">
+                    ⑧ 本人から申出があった場合、医師による面接指導
+                </div>
+                <div class="flow-step">
+                    ⑨ 医師から事業者への意見聴取
+                </div>
+                <div class="flow-step">
+                    ⑩ 就業上の措置（必要に応じて）<br>
+                    （時間外労働の制限、配置転換など）
+                </div>
+                <div class="flow-step">
+                    <strong>【分析・改善フェーズ】</strong><br>
+                    ⑪ 集団分析の実施（努力義務）
+                </div>
+                <div class="flow-step">
+                    ⑫ 職場環境改善（努力義務）
+                </div>
+                <div class="flow-step">
+                    ⑬ 記録の保存（5年間）
+                </div>
+                <div class="flow-step">
+                    ⑭ 労働基準監督署への報告<br>
+                    ※50人以上の事業場のみ
+                </div>
+            </div>
+
+            <h3>🔍 実施者の要件</h3>
+
+            <p>ストレスチェックを実施できるのは、以下の資格者のみです：</p>
+
+            <ol>
+                <li><strong>医師</strong></li>
+                <li><strong>保健師</strong></li>
+                <li><strong>厚生労働大臣指定の研修を修了した下記の者</strong>
+                    <ul>
+                        <li>歯科医師</li>
+                        <li>看護師</li>
+                        <li>精神保健福祉士</li>
+                        <li>公認心理師</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <div class="box box-warning">
+                <strong>⚠️ 重要な制限</strong><br>
+                解雇・昇進・異動に関して直接の権限を持つ監督的地位にある者（人事権者）は、実施の事務に従事できません。これはプライバシー保護のための重要な規定です。
+            </div>
+
+            <h3>📋 調査票の種類</h3>
+
+            <p><strong>推奨：職業性ストレス簡易調査票</strong></p>
+            <ul>
+                <li><strong>57項目版</strong>（標準）</li>
+                <li><strong>23項目版</strong>（簡略版）</li>
+            </ul>
+
+            <h4>調査票の必須要素（3領域）</h4>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>領域</th>
+                        <th>内容</th>
+                        <th>項目数（57項目版）</th>
+                    </tr>
+                    <tr>
+                        <td><strong>A：仕事のストレス要因</strong></td>
+                        <td>職場における心理的な負担の原因</td>
+                        <td>17項目</td>
+                    </tr>
+                    <tr>
+                        <td><strong>B：心身のストレス反応</strong></td>
+                        <td>心身の自覚症状</td>
+                        <td>29項目</td>
+                    </tr>
+                    <tr>
+                        <td><strong>C：周囲のサポート</strong></td>
+                        <td>他の労働者による支援</td>
+                        <td>9項目</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>🎯 高ストレス者の選定基準</h3>
+
+            <p>以下の<strong>①または②のいずれか</strong>を満たす者を高ストレス者として選定：</p>
+
+            <h4>①心身のストレス反応が高い</h4>
+            <ul>
+                <li>「B：心身のストレス反応」の合計点数が<strong>77点以上</strong>（57項目版の場合）</li>
+            </ul>
+
+            <h4>②総合的にストレスが高い</h4>
+            <ul>
+                <li>「B：心身のストレス反応」が<strong>63点以上</strong></li>
+                <li><strong>かつ</strong>「A：仕事のストレス要因」+「C：周囲のサポート」が<strong>76点以上</strong></li>
+            </ul>
+
+            <div class="box box-success">
+                <strong>💡 実務のヒント</strong><br>
+                高ストレス者の選定基準は、関係労働者の意見聴取を経て事業場ごとに設定できます。上記は標準的な例です。目安として、全体の約10%程度が該当する設計が一般的です。
+            </div>
+        </section>
+
+        <!-- セクション5：外部委託 -->
+        <section id="section5">
+            <h2>5. 外部委託のメリットと選び方</h2>
+
+            <h3>🏢 外部委託が推奨される理由</h3>
+
+            <div class="box box-info">
+                <strong>💡 小規模事業場では外部委託が強く推奨</strong><br>
+                労働者数50人未満の事業場においては、<strong>原則として、労働者のプライバシー保護の観点から、ストレスチェックの実施を外部機関に委託することが推奨</strong>されます。
+            </div>
+
+            <h3>なぜ外部委託が必要なのか？</h3>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>課題</th>
+                        <th>社内実施の問題点</th>
+                        <th>外部委託の解決策</th>
+                    </tr>
+                    <tr>
+                        <td><strong>プライバシー保護</strong></td>
+                        <td>小規模事業場では人間関係が近く、結果が経営者に知られる不安が生じやすい</td>
+                        <td>✓ 第三者機関による厳格な情報管理<br>✓ プライバシーマーク等の認証体制</td>
+                    </tr>
+                    <tr>
+                        <td><strong>専門性</strong></td>
+                        <td>資格者の確保が困難<br>法令遵守のノウハウ不足</td>
+                        <td>✓ 有資格者（医師・保健師等）による実施<br>✓ 法令に完全準拠した運用</td>
+                    </tr>
+                    <tr>
+                        <td><strong>実務負担</strong></td>
+                        <td>調査票の準備・配布・回収<br>集計・分析作業の負担</td>
+                        <td>✓ すべての実務をアウトソース<br>✓ 本業に集中できる</td>
+                    </tr>
+                    <tr>
+                        <td><strong>集団分析</strong></td>
+                        <td>10人未満の集団で個人特定のリスク<br>自社で管理すること自体への労働者の不安</td>
+                        <td>✓ 自動的に個人特定防止措置<br>✓ システム化された安全な集計</td>
+                    </tr>
+                    <tr>
+                        <td><strong>記録保存</strong></td>
+                        <td>5年間の保存義務<br>セキュリティ対策</td>
+                        <td>✓ 専門機関による安全な保管<br>✓ セキュリティ基準の遵守</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>✅ 外部委託先の選定チェックポイント</h3>
+
+            <h4>1. 体制・資格</h4>
+            <ul>
+                <li>✓ 有資格者（医師・保健師等）が在籍しているか</li>
+                <li>✓ 実施事務従事者の体制は整っているか</li>
+                <li>✓ 守秘義務の教育・誓約書の取得をしているか</li>
+            </ul>
+
+            <h4>2. サービス内容</h4>
+            <ul>
+                <li>✓ 調査票の種類・配布方法</li>
+                <li>✓ 結果の通知方法（本人直接通知の確実性）</li>
+                <li>✓ 高ストレス者選定の方法</li>
+                <li>✓ 集団分析の実施範囲</li>
+                <li>✓ 面接指導の手配（オプション含む）</li>
+            </ul>
+
+            <h4>3. 情報管理体制</h4>
+            <ul>
+                <li>✓ プライバシーマーク等の認証取得</li>
+                <li>✓ データ保管方法・保管期間（5年間）</li>
+                <li>✓ アクセス制限の方法</li>
+                <li>✓ 個人情報の取扱規程</li>
+            </ul>
+
+            <h4>4. サポート体制</h4>
+            <ul>
+                <li>✓ 社内規程のひな形提供</li>
+                <li>✓ 労働基準監督署への報告サポート（50人以上の場合）</li>
+                <li>✓ 職場環境改善のアドバイス</li>
+            </ul>
+
+            <h4>5. 料金体系</h4>
+            <ul>
+                <li>✓ 従業員数に応じた明確な料金</li>
+                <li>✓ 追加オプションの料金</li>
+                <li>✓ 面接指導費用の有無</li>
+            </ul>
+
+            <div class="box box-success">
+                <strong>📝 推奨アクション</strong><br>
+                外部委託先の選定に当たっては、「サービス内容事前説明書」を作成・提出してもらい、複数社を比較検討することをおすすめします。
+            </div>
+        </section>
+
+        <!-- セクション6：費用負担 -->
+        <section id="section6">
+            <h2>6. 費用負担と実施頻度</h2>
+
+            <h3>💰 費用負担</h3>
+
+            <div class="box box-danger">
+                <strong>🔴 重要</strong><br>
+                ストレスチェック及び面接指導の費用は、<strong>すべて事業者が負担</strong>しなければなりません。労働者に一切負担させることはできません。
+            </div>
+
+            <h4>費用の目安</h4>
+            <ul>
+                <li><strong>ストレスチェック実施費用</strong>：1人あたり500円〜1,500円程度（委託先により異なる）</li>
+                <li><strong>医師による面接指導</strong>：1回あたり10,000円〜30,000円程度</li>
+                <li><strong>集団分析レポート</strong>：オプションで20,000円〜50,000円程度</li>
+            </ul>
+
+            <p><small>※あくまで目安です。サービス内容により変動します。</small></p>
+
+            <h3>⏰ 実施頻度</h3>
+
+            <p><strong>年1回以上の実施が義務</strong></p>
+
+            <h4>実施時期の決め方</h4>
+            <ul>
+                <li>毎年同じ時期に実施するのが一般的</li>
+                <li>新入社員の入社時期や繁忙期を避ける</li>
+                <li>定期健康診断と同時期に実施する企業も多い</li>
+            </ul>
+
+            <h3>💵 賃金の支払い</h3>
+
+            <h4>ストレスチェック受検時間</h4>
+            <ul>
+                <li>法律上、賃金支払い義務の明確な規定はない</li>
+                <li>ただし、<strong>一般健康診断に準じた取扱いが望ましい</strong></li>
+                <li>労働時間内に実施することが推奨される</li>
+            </ul>
+
+            <h4>面接指導の受診時間</h4>
+            <ul>
+                <li><strong>労働時間内に実施することが望ましい</strong></li>
+                <li>労働者が安心して申し出できる環境整備が重要</li>
+            </ul>
+        </section>
+
+        <!-- セクション7：プライバシー保護 -->
+        <section id="section7">
+            <h2>7. プライバシー保護の重要ポイント</h2>
+
+            <p>ストレスチェック制度では、<strong>労働者のプライバシー保護が最重要課題</strong>です。</p>
+
+            <h3>🔒 法律で定められた保護措置</h3>
+
+            <h4>1. 本人同意のない結果提供の禁止</h4>
+
+            <div style="background-color: var(--emerald-pale); padding: 20px; border-radius: 8px; text-align: center; margin: 20px 0;">
+                <p style="margin: 0;">ストレスチェック結果</p>
+                <p style="font-size: 24px; margin: 10px 0;">↓</p>
+                <p style="margin: 0;">本人へ直接通知</p>
+                <p style="font-size: 24px; margin: 10px 0;">↓</p>
+                <p style="margin: 0;"><strong>本人の同意なし</strong> → 事業者には提供禁止<br><strong>本人の同意あり</strong> → 事業者へ提供可能</p>
+            </div>
+
+            <div class="box box-warning">
+                <strong>⚠️ 禁止事項</strong><br>
+                • ストレスチェック実施前・実施時の同意取得は禁止<br>
+                • 同意は結果通知後、書面または電磁的記録で個別に取得<br>
+                • 包括同意やオプトアウト方式は不可
+            </div>
+
+            <h4>2. 守秘義務</h4>
+
+            <p><strong>実施事務従事者には法律上の守秘義務</strong>があります。</p>
+
+            <ul>
+                <li>違反した場合：<strong>50万円以下の罰金</strong>（労働安全衛生法第119条）</li>
+                <li>対象者：医師、保健師、実施事務に関わるすべての者</li>
+            </ul>
+
+            <h4>3. 人事権者の実施事務関与禁止</h4>
+
+            <ul>
+                <li>解雇・昇進・異動の権限を持つ者は、実施事務に関与できない</li>
+                <li>情報へのアクセスも制限される</li>
+            </ul>
+
+            <h3>📊 集団分析におけるプライバシー保護</h3>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>集団の規模</th>
+                        <th>取扱い</th>
+                    </tr>
+                    <tr>
+                        <td><strong>10人以上</strong></td>
+                        <td>本人の同意なく集団分析可能</td>
+                    </tr>
+                    <tr>
+                        <td><strong>10人未満</strong></td>
+                        <td>① 個人特定されない方法（平均値のみ等）で実施<br>② または全員の同意を取得</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>🗄️ 情報管理の実務</h3>
+
+            <h4>記録の保存期間</h4>
+            <ul>
+                <li><strong>ストレスチェック結果</strong>：5年間（実施者が保存、本人同意があれば事業者保存も可）</li>
+                <li><strong>面接指導結果</strong>：5年間（事業者が保存）</li>
+            </ul>
+
+            <h4>アクセス制限</h4>
+            <ul>
+                <li>個人情報管理責任者の設置</li>
+                <li>アクセス権限の明確化</li>
+                <li>データ保管場所の限定</li>
+            </ul>
+        </section>
+
+        <!-- セクション8：罰則規定 -->
+        <section id="section8">
+            <h2>8. 罰則規定と法的リスク（50人以上）</h2>
+
+            <div class="box box-info">
+                <strong>💡 注意</strong><br>
+                50人未満の事業場は、ストレスチェック実施が義務化されますが、<strong>労働基準監督署への報告義務はありません</strong>。以下の罰則は<strong>50人以上の事業場のみ</strong>が対象です。
+            </div>
+
+            <h3>⚠️ 罰則が適用されるケース（50人以上）</h3>
+
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <th>違反内容</th>
+                        <th>罰則</th>
+                        <th>法的根拠</th>
+                    </tr>
+                    <tr>
+                        <td><strong>ストレスチェック結果の労働基準監督署への報告をしなかった</strong></td>
+                        <td><strong>罰則あり</strong></td>
+                        <td>労働安全衛生法第100条・第120条第5号</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ストレスチェックを実施しなかった</strong></td>
+                        <td>報告義務あり（報告しない場合は罰則）</td>
+                        <td>同上</td>
+                    </tr>
+                    <tr>
+                        <td><strong>実施事務従事者が守秘義務に違反した</strong></td>
+                        <td><strong>50万円以下の罰金</strong></td>
+                        <td>労働安全衛生法第105条・第119条</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="box box-danger">
+                <strong>🚨 重要な注意点（50人以上）</strong><br>
+                「ストレスチェックを実施しなかった場合でも、報告義務があります」実施しなかったことを含めて報告書を提出しなければ、罰則の対象となります。
+            </div>
+
+            <h3>📝 報告義務の詳細（50人以上）</h3>
+
+            <ul>
+                <li><strong>報告先</strong>：所轄の労働基準監督署長</li>
+                <li><strong>報告様式</strong>：「心理的な負担の程度を把握するための検査結果等報告書（様式第6号の2）」</li>
+                <li><strong>報告時期</strong>：年1回</li>
+                <li><strong>50人未満の事業場</strong>：報告義務なし</li>
+            </ul>
+        </section>
+
+        <!-- セクション9：まとめ -->
+        <section id="section9">
+            <h2>9. まとめ：専門家への相談がおすすめの理由</h2>
+
+            <h3>🎯 ストレスチェック制度実施のまとめ</h3>
+
+            <h4>押さえるべき重要ポイント</h4>
+
+            <ul>
+                <li>✅ <strong>2025年法改正</strong>で50人未満も<strong>義務化</strong>（努力義務から変更）</li>
+                <li>✅ <strong>施行日</strong>は公布日から最長3年以内（準備期間あり）</li>
+                <li>✅ <strong>年1回以上</strong>の実施が必要</li>
+                <li>✅ <strong>費用は全額事業者負担</strong></li>
+                <li>✅ <strong>プライバシー保護</strong>が最重要（本人同意なしの提供禁止、守秘義務）</li>
+                <li>✅ <strong>外部委託が推奨</strong>（特に小規模事業場）</li>
+                <li>✅ <strong>50人未満は報告義務なし</strong>（労働基準監督署への報告不要）</li>
+            </ul>
+
+            <h3>🤔 「でも、実際に何から始めればいいの?」</h3>
+
+            <p>ストレスチェック制度は、法令遵守だけでなく、<strong>労働者のプライバシー保護、専門的知識、継続的な運用体制</strong>など、多くの要素が求められます。</p>
+
+            <h4>よくある課題</h4>
+
+            <ul>
+                <li>❌ 社内に資格者がいない</li>
+                <li>❌ 関係労働者の意見聴取の方法がわからない</li>
+                <li>❌ 社内規程の作り方がわからない</li>
+                <li>❌ プライバシー保護の具体的な方法がわからない</li>
+                <li>❌ 高ストレス者への対応方法がわからない</li>
+                <li>❌ 集団分析の活用方法がわからない</li>
+                <li>❌ 面接指導を依頼できる医師がいない</li>
+                <li>❌ 法改正の詳細情報が不足している</li>
+            </ul>
+        </section>
+
+        <!-- CTA セクション -->
+        <div class="cta-section">
+            <h2>そんな時は、専門家にお任せください</h2>
+            <p>
+                <strong>株式会社こころソリューション</strong>は、<br>
+                ストレスチェック制度の実施から産業医のご紹介まで、<br>
+                中小企業のメンタルヘルス対策をトータルサポートいたします。
+            </p>
+
+            <div class="cta-box">
+                <h3>当社のサポート内容</h3>
+                <ul>
+                    <li>✓ ストレスチェック制度の完全代行（調査票配布〜結果通知まで）</li>
+                    <li>✓ 2025年法改正に完全対応した実施体制構築</li>
+                    <li>✓ 社内規程作成サポート</li>
+                    <li>✓ 関係労働者の意見聴取サポート</li>
+                    <li>✓ 産業医のご紹介・選任サポート</li>
+                    <li>✓ 医師による面接指導の手配</li>
+                    <li>✓ 集団分析レポートと職場環境改善提案</li>
+                    <li>✓ 労働基準監督署への報告書作成サポート（50人以上）</li>
+                    <li>✓ 継続的なメンタルヘルス対策支援</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <h3 style="color: white;">まずはお気軽にご相談ください</h3>
+                <p style="font-size: clamp(16px, 3vw, 20px);">
+                    初回相談は無料。貴社の状況に合わせた<br>
+                    最適なプランをご提案いたします。
+                </p>
+                <a href="https://www.kokorohot.co.jp/contact/" target="_blank" class="cta-button">
+                    💻 お問い合わせはこちら
+                </a>
+            </div>
+        </div>
+
+        <!-- 参考資料 -->
+        <section>
+            <h2>📚 参考資料・関連情報</h2>
+            <p>本記事は、以下の厚生労働省公式資料に基づいて作成しています：</p>
+            <ul>
+                <li>改正労働安全衛生法（令和7年5月14日公布）</li>
+                <li>小規模事業場ストレスチェック制度実施マニュアル（令和7年素案）</li>
+                <li>労働安全衛生法に基づくストレスチェック制度実施マニュアル（令和3年2月改訂）</li>
+                <li>ストレスチェック制度実施関係Q&A（令和3年2月更新）</li>
+                <li>職業性ストレス簡易調査票（57項目・23項目）</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <div class="container">
+            <p style="font-size: clamp(15px, 3vw, 18px); margin-bottom: 15px;">
+                <strong>企業の未来は、従業員の心の健康から。</strong><br>
+                ストレスチェック制度を通じて、働きやすい職場づくりを実現しましょう。
+            </p>
+            <a href="https://www.kokorohot.co.jp/contact/" target="_blank">
+                ▶ 株式会社こころソリューションへのお問い合わせはこちら
+            </a>
+            
+            <div class="keywords">
+                <strong>🔗 関連キーワード</strong><br>
+                ストレスチェック義務化 / 50人未満 / 2025年法改正 / 労働安全衛生法改正 / 小規模事業場 / 中小企業 / メンタルヘルス対策 / 産業医 / 外部委託 / 努力義務から義務化 / 高ストレス者 / 面接指導 / 職業性ストレス簡易調査票 / プライバシー保護 / 集団分析 / 職場環境改善 / 人事労務 / 健康経営
+            </div>
+            
+            <p style="margin-top: 20px; font-size: clamp(12px, 2vw, 14px); color: #6c757d;">
+                ※本記事の情報は2025年12月時点のものです。法令改正等により内容が変更される場合があります。
+            </p>
+            
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--emerald-main);">
+                <h3 style="color: var(--text-dark); font-size: clamp(18px, 3.5vw, 22px); margin-bottom: 20px; text-align: center;">📚 おすすめ書籍のご案内</h3>
+                <div style="background-color: white; border: 2px solid var(--emerald-main); border-radius: 10px; padding: 25px; max-width: 700px; margin: 0 auto;">
+                    <p style="font-size: clamp(15px, 3vw, 18px); color: var(--text-dark); margin-bottom: 15px; text-align: center;">
+                        <strong>中小企業の社長・人事担当者向け</strong><br>
+                        ストレスチェック制度をわかりやすく解説した書籍
+                    </p>
+                    <p style="font-size: clamp(16px, 3.5vw, 20px); color: var(--text-medium); font-weight: bold; text-align: center; line-height: 1.6; margin: 20px 0;">
+                        📖 中小企業のための<br>「健康経営×ストレスチェック」入門<br>
+                        <span style="font-size: clamp(14px, 3vw, 18px);">ー法改正を見据えた新・職場戦略</span>
+                    </p>
+                    <p style="text-align: center; margin-top: 20px;">
+                        <a href="https://www.amazon.co.jp/dp/B0G5QC9X6R/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background-color: var(--emerald-main); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-size: clamp(14px, 3vw, 16px); font-weight: bold; transition: all 0.3s;">
+                            📚 書籍について詳しく見る
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 40px; font-size: clamp(12px, 2vw, 14px); color: #6c757d; text-align: center;">
+                © 2025 株式会社こころソリューション All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <div id="back-to-top">↑</div>
+
+    <script>
+        // スムーズスクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // トップへ戻るボタン
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
